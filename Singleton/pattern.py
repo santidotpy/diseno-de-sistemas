@@ -2,9 +2,9 @@
 
 
 class Singleton:
-    __instance = None
+    __instance = None # private static attribute to hold the instance of the class 
 
-    @staticmethod
+    @staticmethod # static method doesn't require an instance of the class to be called 
     def get_instance():
         if Singleton.__instance == None:
             Singleton()
